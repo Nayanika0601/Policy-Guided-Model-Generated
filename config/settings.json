@@ -1,0 +1,18 @@
+{
+    "ollama_url": "http://localhost:11434/api/generate",
+    "ollama_model": "llama3.1:8b",
+    "llm_timeout_sec": 120,
+    "llm_mode": "a",
+    "llm_history_length": 3,
+    "llm_min_words": 8,
+    "llm_max_words": 35,
+    "thresholds": {
+        "no_movement_sec": 30,
+        "no_answer_sec": 15,
+        "face_absent_sec": 3,
+        "gaze_away_thresh": 0.3
+    },
+    "cooldown_sec": 15,
+    "llm_backend": "gpu_ssh",
+    "condition": "C4"
+}

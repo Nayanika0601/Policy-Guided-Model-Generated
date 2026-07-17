@@ -1,0 +1,2293 @@
+{
+  "timestamp": "2026-05-27T08:18:30",
+  "condition": "C1",
+  "condition_name": "Behavior-Only Contextual Prompting",
+  "runs": 1,
+  "target_events": [
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:14",
+      "scenario_name": "praise",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "student_answer": "value",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 3.918,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 3.206,
+      "whisper_transcribe_sec": 0.713,
+      "tts_question_latency_sec": 2.825,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 6.743,
+      "learner_state": {
+        "correct_streak": 1,
+        "wrong_streak": 0,
+        "rolling_accuracy": 1.0,
+        "confidence_level": "high",
+        "weak_concept": null,
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "repeated_hesitation_count": 0,
+        "no_answer_count": 0,
+        "total_questions_answered": 1
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 3.918,
+        "last_transcript": "value",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 1,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem focused on the correct answer, let's take a moment to review the possible definitions together now.",
+      "llm_used": true,
+      "llm_latency_sec": 1.363,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem focused on the correct answer, let's take a moment to review the possible definitions together now.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You're looking right at me with a calm and focused expression, considering the vocabulary question carefully."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You're taking your time to think about this one, I'm happy to wait for you to respond."
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": "answer_leak",
+          "raw_response": "Let's break it down together: what do you think 'scope' refers to in programming concepts?"
+        },
+        {
+          "attempt": 4,
+          "temperature": 1.1,
+          "rejection_reason": null,
+          "raw_response": "You seem focused on the correct answer, let's take a moment to review the possible definitions together now."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:15",
+      "scenario_name": "confidence_boost",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "data_types",
+      "question_text": "What type stores decimal numbers?",
+      "student_answer": "float",
+      "answer_status": "correct",
+      "response_behavior": "slow_correct",
+      "response_time_sec": 10.116,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 8.901,
+      "whisper_transcribe_sec": 1.216,
+      "tts_question_latency_sec": 4.03,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 14.146,
+      "learner_state": {
+        "correct_streak": 2,
+        "wrong_streak": 0,
+        "rolling_accuracy": 1.0,
+        "confidence_level": "high",
+        "weak_concept": null,
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 2
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 10.116,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 10.116,
+        "last_transcript": "float",
+        "last_response_behavior": "slow_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.55,
+        "head_yaw_deg": 4.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 9.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "run_index": 1,
+      "event_index": 2,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.55\n- head_yaw_deg: 4.0\n- head_pitch_deg: 3.0\n- head_moving: False\n- no_movement_sec: 9.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're looking at the options carefully, your head tilted slightly to one side, I see.",
+      "llm_used": true,
+      "llm_latency_sec": 0.381,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.55\n- head_yaw_deg: 4.0\n- head_pitch_deg: 3.0\n- head_moving: False\n- no_movement_sec: 9.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're looking at the options carefully, your head tilted slightly to one side, I see.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're looking at the options carefully, your head tilted slightly to one side, I see."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:15",
+      "scenario_name": "challenge",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "conditionals",
+      "question_text": "What keyword starts a condition?",
+      "student_answer": "if",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 4.677,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 3.933,
+      "whisper_transcribe_sec": 0.743,
+      "tts_question_latency_sec": 3.266,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 7.942,
+      "learner_state": {
+        "correct_streak": 3,
+        "wrong_streak": 0,
+        "rolling_accuracy": 1.0,
+        "confidence_level": "high",
+        "weak_concept": null,
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 3
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.677,
+        "last_transcript": "if",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 3,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be thinking carefully about this question; would you like me to clarify anything?",
+      "llm_used": true,
+      "llm_latency_sec": 0.642,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be thinking carefully about this question; would you like me to clarify anything?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You're taking your time to think about this one, and that's completely okay, let's keep going!"
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": null,
+          "raw_response": "You seem to be thinking carefully about this question; would you like me to clarify anything?"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:16",
+      "scenario_name": "slow_down",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "conditionals",
+      "question_text": "What operator needs both conditions true?",
+      "student_answer": "equals",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 2.089,
+      "hesitation_high": false,
+      "rapid_guess": true,
+      "mic_listen_sec": 1.28,
+      "whisper_transcribe_sec": 0.809,
+      "tts_question_latency_sec": 3.516,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 5.605,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.75,
+        "confidence_level": "high",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 4
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": true,
+        "clarification_requested": false,
+        "last_answer_time_sec": 2.089,
+        "last_transcript": "equals",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 4,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be carefully considering each option before making your selection, that's good thinking!",
+      "llm_used": true,
+      "llm_latency_sec": 0.312,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be carefully considering each option before making your selection, that's good thinking!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You seem to be carefully considering each option before making your selection, that's good thinking!"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:16",
+      "scenario_name": "metacognitive_prompt",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "variables",
+      "question_text": "What symbol assigns a value?",
+      "student_answer": "value",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 2.08,
+      "hesitation_high": false,
+      "rapid_guess": true,
+      "mic_listen_sec": 1.28,
+      "whisper_transcribe_sec": 0.799,
+      "tts_question_latency_sec": 3.95,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 6.029,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 2,
+        "rolling_accuracy": 0.6,
+        "confidence_level": "medium",
+        "weak_concept": "variables",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 5
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": true,
+        "clarification_requested": false,
+        "last_answer_time_sec": 2.08,
+        "last_transcript": "value",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 5,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're focused on the screen with about 80% of your attention still directed at me.",
+      "llm_used": true,
+      "llm_latency_sec": 0.648,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're focused on the screen with about 80% of your attention still directed at me.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "word_count_21",
+          "raw_response": "You've been thinking about this one for a moment, let's see if we can clarify what the question is asking you."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": null,
+          "raw_response": "You're focused on the screen with about 80% of your attention still directed at me."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:18",
+      "scenario_name": "reassure",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "variables",
+      "question_text": "What word means give a variable a value?",
+      "student_answer": "value",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 4.872,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 4.003,
+      "whisper_transcribe_sec": 0.868,
+      "tts_question_latency_sec": 2.278,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 7.15,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 6,
+        "rolling_accuracy": 0.333,
+        "confidence_level": "low",
+        "weak_concept": "variables",
+        "concept_attempts": {
+          "variables": 3,
+          "data_types": 2,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 9
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.872,
+        "last_transcript": "value",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 9,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be carefully considering your answer; let's review the question together.",
+      "llm_used": true,
+      "llm_latency_sec": 1.305,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be carefully considering your answer; let's review the question together.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You seem to be carefully considering this programming term, let's see if you can recall it now."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "word_count_21",
+          "raw_response": "You're taking your time to think about this one, and I'm happy to give you a moment to consider it carefully."
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You're focusing intently on this question, and I can see you're considering your options carefully here!"
+        },
+        {
+          "attempt": 4,
+          "temperature": 1.1,
+          "rejection_reason": null,
+          "raw_response": "You seem to be carefully considering your answer; let's review the question together."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:19",
+      "scenario_name": "scaffold_hint_no_answer",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "loops",
+      "question_text": "What keyword exits a loop immediately?",
+      "student_answer": "",
+      "answer_status": "no_answer",
+      "response_behavior": "no_answer",
+      "response_time_sec": 15.048,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 15.224,
+      "whisper_transcribe_sec": 0.0,
+      "tts_question_latency_sec": 3.811,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 18.86,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 6,
+        "rolling_accuracy": 0.3,
+        "confidence_level": "low",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 3,
+          "data_types": 2,
+          "loops": 2,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 2,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 2,
+        "no_answer_count": 1,
+        "total_questions_answered": 10
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 15.048,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 15.048,
+        "last_transcript": "",
+        "last_response_behavior": "no_answer",
+        "no_answer": true
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.65,
+        "head_yaw_deg": 2.0,
+        "head_pitch_deg": 1.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 15.0,
+        "still_there_prompt": true,
+        "speech_energy": "low"
+      },
+      "run_index": 1,
+      "event_index": 10,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: no_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.65\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 15.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be thinking carefully about this programming term, take your time to review the options.",
+      "llm_used": true,
+      "llm_latency_sec": 1.057,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: no_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.65\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 15.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be thinking carefully about this programming term, take your time to review the options.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "answer_leak",
+          "raw_response": "Let's take another look at the options together and see if we can figure this one out."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "word_count_20",
+          "raw_response": "You seem unsure about this one - take another look at your notes and see if anything comes to mind."
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": null,
+          "raw_response": "You seem to be thinking carefully about this programming term, take your time to review the options."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:21",
+      "scenario_name": "give_example",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "loops",
+      "question_text": "What keyword starts a counting loop?",
+      "student_answer": "function",
+      "answer_status": "incorrect",
+      "response_behavior": "slow_wrong",
+      "response_time_sec": 13.147,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 12.014,
+      "whisper_transcribe_sec": 1.133,
+      "tts_question_latency_sec": 4.585,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 17.732,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.385,
+        "confidence_level": "low",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 3,
+          "conditionals": 4
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 3,
+        "no_answer_count": 1,
+        "total_questions_answered": 13
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 13.147,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 13.147,
+        "last_transcript": "function",
+        "last_response_behavior": "slow_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.55,
+        "head_yaw_deg": 4.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 9.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "run_index": 1,
+      "event_index": 13,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.55\n- head_yaw_deg: 4.0\n- head_pitch_deg: 3.0\n- head_moving: False\n- no_movement_sec: 9.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be thinking carefully about this vocabulary question, don't worry take your time.",
+      "llm_used": true,
+      "llm_latency_sec": 0.404,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.55\n- head_yaw_deg: 4.0\n- head_pitch_deg: 3.0\n- head_moving: False\n- no_movement_sec: 9.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be thinking carefully about this vocabulary question, don't worry take your time.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You seem to be thinking carefully about this vocabulary question, don't worry take your time."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:25",
+      "scenario_name": "elaborate_concept",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "data_types",
+      "question_text": "What type stores key value pairs?",
+      "student_answer": "list",
+      "answer_status": "incorrect",
+      "response_behavior": "slow_wrong",
+      "response_time_sec": 10.048,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 9.161,
+      "whisper_transcribe_sec": 0.887,
+      "tts_question_latency_sec": 4.81,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 14.857,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 10.048,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 10.048,
+        "last_transcript": "list",
+        "last_response_behavior": "slow_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.55,
+        "head_yaw_deg": 4.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 9.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "run_index": 1,
+      "event_index": 18,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.55\n- head_yaw_deg: 4.0\n- head_pitch_deg: 3.0\n- head_moving: False\n- no_movement_sec: 9.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be thinking carefully about this vocabulary question; take your time to review the options.",
+      "llm_used": true,
+      "llm_latency_sec": 0.346,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.55\n- head_yaw_deg: 4.0\n- head_pitch_deg: 3.0\n- head_moving: False\n- no_movement_sec: 9.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be thinking carefully about this vocabulary question; take your time to review the options.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You seem to be thinking carefully about this vocabulary question; take your time to review the options."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    }
+  ],
+  "setup_events": [
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:16",
+      "scenario_name": "setup_reassure_low_confidence",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "conditionals",
+      "question_text": "What word gives another choice?",
+      "student_answer": "if",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 3.635,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 2.825,
+      "whisper_transcribe_sec": 0.81,
+      "tts_question_latency_sec": 3.768,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 7.403,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 3,
+        "rolling_accuracy": 0.5,
+        "confidence_level": "medium",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 6
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 3.635,
+        "last_transcript": "if",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 6,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're taking your time to consider each answer choice carefully, that's a great approach!",
+      "llm_used": true,
+      "llm_latency_sec": 0.308,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're taking your time to consider each answer choice carefully, that's a great approach!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're taking your time to consider each answer choice carefully, that's a great approach!"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:17",
+      "scenario_name": "setup_reassure_low_confidence_2",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "loops",
+      "question_text": "What word repeats while a rule is true?",
+      "student_answer": "for",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 4.428,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 3.725,
+      "whisper_transcribe_sec": 0.703,
+      "tts_question_latency_sec": 4.417,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 8.846,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 4,
+        "rolling_accuracy": 0.429,
+        "confidence_level": "medium",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 1,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 7
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.428,
+        "last_transcript": "for",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 7,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're really thinking about this one, I can see your focus on me right now.",
+      "llm_used": true,
+      "llm_latency_sec": 0.303,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're really thinking about this one, I can see your focus on me right now.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're really thinking about this one, I can see your focus on me right now."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:17",
+      "scenario_name": "setup_reassure_low_confidence_3",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "data_types",
+      "question_text": "What type stores true or false?",
+      "student_answer": "string",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 4.094,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 3.224,
+      "whisper_transcribe_sec": 0.87,
+      "tts_question_latency_sec": 2.466,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 6.561,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 5,
+        "rolling_accuracy": 0.375,
+        "confidence_level": "low",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 2,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 8
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.094,
+        "last_transcript": "string",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 8,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You've taken some time to think about it, let's review what we know so far together then.",
+      "llm_used": true,
+      "llm_latency_sec": 0.337,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You've taken some time to think about it, let's review what we know so far together then.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You've taken some time to think about it, let's review what we know so far together then."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:20",
+      "scenario_name": "setup_reset_variables_accuracy",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "variables",
+      "question_text": "What can store text or numbers?",
+      "student_answer": "variable",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 4.421,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 3.357,
+      "whisper_transcribe_sec": 1.065,
+      "tts_question_latency_sec": 3.609,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 8.03,
+      "learner_state": {
+        "correct_streak": 1,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.364,
+        "confidence_level": "low",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 2,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 2,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 2,
+        "no_answer_count": 1,
+        "total_questions_answered": 11
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.421,
+        "last_transcript": "variable",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 11,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're carefully reviewing each option before making your decision on this programming vocabulary question.",
+      "llm_used": true,
+      "llm_latency_sec": 0.317,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're carefully reviewing each option before making your decision on this programming vocabulary question.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're carefully reviewing each option before making your decision on this programming vocabulary question."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:20",
+      "scenario_name": "setup_reset_conditionals_accuracy",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "conditionals",
+      "question_text": "What word starts a condition?",
+      "student_answer": "if",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 4.919,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 4.03,
+      "whisper_transcribe_sec": 0.889,
+      "tts_question_latency_sec": 3.656,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 8.575,
+      "learner_state": {
+        "correct_streak": 2,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.417,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 2,
+          "conditionals": 4
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 2,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 2,
+        "no_answer_count": 1,
+        "total_questions_answered": 12
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.919,
+        "last_transcript": "if",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 12,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be thinking carefully about this vocabulary question, let's take your time with it!",
+      "llm_used": true,
+      "llm_latency_sec": 0.302,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be thinking carefully about this vocabulary question, let's take your time with it!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You seem to be thinking carefully about this vocabulary question, let's take your time with it!"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:22",
+      "scenario_name": "setup_reset_before_elaboration",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "conditionals",
+      "question_text": "What word gives another branch?",
+      "student_answer": "else",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 3.732,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 2.68,
+      "whisper_transcribe_sec": 1.052,
+      "tts_question_latency_sec": 2.137,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 5.87,
+      "learner_state": {
+        "correct_streak": 1,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.429,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 3,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 3,
+        "no_answer_count": 1,
+        "total_questions_answered": 14
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 3.732,
+        "last_transcript": "else",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 14,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "Let's take another look at that word choice together, you're doing great so far!",
+      "llm_used": true,
+      "llm_latency_sec": 1.342,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "Let's take another look at that word choice together, you're doing great so far!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You've thoughtfully considered this programming term, and now let's discuss your reasoning together."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "word_count_19",
+          "raw_response": "You seem to be focusing intently on this question, let's see what you know about data structures together now!"
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You've been thinking carefully about this question for 1 second - now let's review your answer together."
+        },
+        {
+          "attempt": 4,
+          "temperature": 1.1,
+          "rejection_reason": null,
+          "raw_response": "Let's take another look at that word choice together, you're doing great so far!"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:22",
+      "scenario_name": "setup_loop_recovery_before_elaboration",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "loops",
+      "question_text": "What keyword repeats over a range?",
+      "student_answer": "for",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 2.684,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 1.839,
+      "whisper_transcribe_sec": 0.845,
+      "tts_question_latency_sec": 2.239,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 4.923,
+      "learner_state": {
+        "correct_streak": 2,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.467,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 3,
+        "no_answer_count": 1,
+        "total_questions_answered": 15
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 2.684,
+        "last_transcript": "for",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "run_index": 1,
+      "event_index": 15,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're really focusing on the question now; keep thinking about what that term means in programming concepts!",
+      "llm_used": true,
+      "llm_latency_sec": 0.401,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: quiz_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.8\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 1.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: medium\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're really focusing on the question now; keep thinking about what that term means in programming concepts!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're really focusing on the question now; keep thinking about what that term means in programming concepts!"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:23",
+      "scenario_name": "setup_data_types_no_answer_1",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "data_types",
+      "question_text": "What type stores text?",
+      "student_answer": "",
+      "answer_status": "no_answer",
+      "response_behavior": "no_answer",
+      "response_time_sec": 15.116,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 14.851,
+      "whisper_transcribe_sec": 0.0,
+      "tts_question_latency_sec": 2.834,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 17.95,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.438,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 3,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 2,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 4,
+        "no_answer_count": 2,
+        "total_questions_answered": 16
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 15.116,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 15.116,
+        "last_transcript": "",
+        "last_response_behavior": "no_answer",
+        "no_answer": true
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.65,
+        "head_yaw_deg": 2.0,
+        "head_pitch_deg": 1.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 15.0,
+        "still_there_prompt": true,
+        "speech_energy": "low"
+      },
+      "run_index": 1,
+      "event_index": 16,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: no_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.65\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 15.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're really thinking about this one, I can see you considering it carefully on your face.",
+      "llm_used": true,
+      "llm_latency_sec": 0.984,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: no_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.65\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 15.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're really thinking about this one, I can see you considering it carefully on your face.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You seem to be taking your time to think about this vocabulary question, and that's perfectly fine."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "word_count_20",
+          "raw_response": "You seem to be taking your time to think about this one, let's keep going at a comfortable pace together."
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": null,
+          "raw_response": "You're really thinking about this one, I can see you considering it carefully on your face."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:25",
+      "scenario_name": "setup_data_types_no_answer_2",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "data_types",
+      "question_text": "What type stores whole numbers?",
+      "student_answer": "",
+      "answer_status": "no_answer",
+      "response_behavior": "no_answer",
+      "response_time_sec": 15.318,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 14.982,
+      "whisper_transcribe_sec": 0.0,
+      "tts_question_latency_sec": 3.111,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 18.428,
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.412,
+        "confidence_level": "medium",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 4,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 3,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 5,
+        "no_answer_count": 3,
+        "total_questions_answered": 17
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 15.318,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 15.318,
+        "last_transcript": "",
+        "last_response_behavior": "no_answer",
+        "no_answer": true
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.65,
+        "head_yaw_deg": 2.0,
+        "head_pitch_deg": 1.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 15.0,
+        "still_there_prompt": true,
+        "speech_energy": "low"
+      },
+      "run_index": 1,
+      "event_index": 17,
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: no_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.65\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 15.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be considering your response carefully, take your time to think about this vocabulary question.",
+      "llm_used": true,
+      "llm_latency_sec": 1.776,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: quiz_answer\n- trigger: no_answer\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.65\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 15.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be considering your response carefully, take your time to think about this vocabulary question.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "word_count_19",
+          "raw_response": "You've been thinking about this one for a while now, let's take another look at the question together slowly."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You've been thinking about this for 15 seconds; take another moment to review the question carefully before answering."
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You seem to be thinking carefully about this programming term - take your time and consider different possibilities."
+        },
+        {
+          "attempt": 4,
+          "temperature": 1.1,
+          "rejection_reason": "word_count_20",
+          "raw_response": "Let's take a closer look at the question again and see if we can figure out the correct term together."
+        },
+        {
+          "attempt": 5,
+          "temperature": 1.2,
+          "rejection_reason": null,
+          "raw_response": "You seem to be considering your response carefully, take your time to think about this vocabulary question."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    }
+  ],
+  "behavior_events": [
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:26",
+      "run_index": 1,
+      "event_index": 19,
+      "event_type": "behavior_event",
+      "trigger": "head_turned",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "no_answer": false,
+        "last_response_behavior": null
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.15,
+        "head_yaw_deg": 42.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": true,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.5,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: behavior_event\n- trigger: head_turned\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.15\n- head_yaw_deg: 42.0\n- head_pitch_deg: 3.0\n- head_moving: True\n- no_movement_sec: 1.5\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're leaning forward, but take your time to review the options before making a selection.",
+      "llm_used": true,
+      "llm_latency_sec": 0.78,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: behavior_event\n- trigger: head_turned\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.15\n- head_yaw_deg: 42.0\n- head_pitch_deg: 3.0\n- head_moving: True\n- no_movement_sec: 1.5\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're leaning forward, but take your time to review the options before making a selection.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "word_count_20",
+          "raw_response": "You seem to be reviewing the options for this vocabulary question, let's take your time to consider each answer carefully."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": null,
+          "raw_response": "You're leaning forward, but take your time to review the options before making a selection."
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:28",
+      "run_index": 1,
+      "event_index": 20,
+      "event_type": "behavior_event",
+      "trigger": "face_absent",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "no_answer": false,
+        "last_response_behavior": null
+      },
+      "obs": {
+        "face_detected": false,
+        "body_detected": false,
+        "gaze_on_robot": 0.0,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 6.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: behavior_event\n- trigger: face_absent\n- face_detected: False\n- body_detected: False\n- gaze_on_robot: 0.0\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 6.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be struggling with this question, would you like me to provide more context?",
+      "llm_used": true,
+      "llm_latency_sec": 1.688,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: behavior_event\n- trigger: face_absent\n- face_detected: False\n- body_detected: False\n- gaze_on_robot: 0.0\n- head_yaw_deg: 0.0\n- head_pitch_deg: 0.0\n- head_moving: False\n- no_movement_sec: 6.0\n- still_there_prompt: False\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be struggling with this question, would you like me to provide more context?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "word_count_21",
+          "raw_response": "You seem to be lost in thought, take a moment to collect your thoughts and focus on the question again please."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "word_count_22",
+          "raw_response": "You seem to be having trouble with this one - take your time and see if you can recall the term's definition."
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": "word_count_20",
+          "raw_response": "You seem to be lost in thought, can you take a deep breath and try to refocus on the question?"
+        },
+        {
+          "attempt": 4,
+          "temperature": 1.1,
+          "rejection_reason": "answer_leak",
+          "raw_response": "You seem to be taking a break from the quiz; would you like me to clarify the question?"
+        },
+        {
+          "attempt": 5,
+          "temperature": 1.2,
+          "rejection_reason": null,
+          "raw_response": "You seem to be struggling with this question, would you like me to provide more context?"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:29",
+      "run_index": 1,
+      "event_index": 21,
+      "event_type": "behavior_event",
+      "trigger": "no_movement",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "no_answer": false,
+        "last_response_behavior": null
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.7,
+        "head_yaw_deg": 2.0,
+        "head_pitch_deg": 1.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 18.0,
+        "still_there_prompt": true,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor helping an adult student during a beginner programming vocabulary quiz. Write one short spoken tutor response based only on observable behavior. Do not reveal the answer.",
+      "user_prompt": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: behavior_event\n- trigger: no_movement\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.7\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 18.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You seem to be taking your time thinking about this one, no worries at all, keep going!",
+      "llm_used": true,
+      "llm_latency_sec": 0.677,
+      "llm_prompt_sent": "Situation:\nYou are observing a learner during a beginner programming vocabulary quiz.\n\nObservable behavior context:\n- event_type: behavior_event\n- trigger: no_movement\n- face_detected: True\n- body_detected: True\n- gaze_on_robot: 0.7\n- head_yaw_deg: 2.0\n- head_pitch_deg: 1.0\n- head_moving: False\n- no_movement_sec: 18.0\n- still_there_prompt: True\n- hand_raised: False\n- speech_energy: low\n\nRules:\n- Output exactly one sentence.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- Do not mention that you are an AI.\n- Do not say the selected strategy.\n- Do not use labels like scaffold, praise, or reassure.\n- This is a vocabulary question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You seem to be taking your time thinking about this one, no worries at all, keep going!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "word_count_19",
+          "raw_response": "You seem to be taking your time thinking about this one, let's see if you can recall it now."
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": null,
+          "raw_response": "You seem to be taking your time thinking about this one, no worries at all, keep going!"
+        }
+      ],
+      "response_source": "llm",
+      "llm_backend": "gpu_ssh"
+    }
+  ],
+  "hand_raise_events": [
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:29",
+      "run_index": 1,
+      "event_index": 22,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "I have a question",
+      "expected_help_request_type": "ask_question",
+      "help_request_type": "ask_question",
+      "classification_correct": true,
+      "response_policy": "ask_question",
+      "response_text": "Go ahead and ask your question, I'm here to help you with Python.",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": true,
+      "llm_latency_sec": 0.399,
+      "llm_prompt_sent": "Situation: The learner raised a hand and wants to ask a question.\nSpoken request: I have a question\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Invite the learner to ask their question.\n- Do not answer a question yet.",
+      "llm_raw_response": "Go ahead and ask your question, I'm here to help you with Python.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": null,
+          "raw_response": "Go ahead and ask your question, I'm here to help you with Python."
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "llm"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:29",
+      "run_index": 1,
+      "event_index": 23,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "can you repeat the question",
+      "expected_help_request_type": "repeat_question",
+      "help_request_type": "repeat_question",
+      "classification_correct": true,
+      "response_policy": "repeat_question",
+      "response_text": "Sure, the question is: What does a variable store?",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": false,
+      "llm_latency_sec": 0.0,
+      "llm_prompt_sent": "",
+      "llm_raw_response": "",
+      "llm_retry_log": [],
+      "llm_backend": "gpu_ssh",
+      "response_source": "deterministic_fallback"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:29",
+      "run_index": 1,
+      "event_index": 24,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "can I get a hint",
+      "expected_help_request_type": "hint_request",
+      "help_request_type": "hint_request",
+      "classification_correct": true,
+      "response_policy": "scaffold_hint",
+      "response_text": "Sure, I can give you a small hint.",
+      "routes_to_strategy": "scaffold_hint",
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": false,
+      "llm_latency_sec": 0.289,
+      "llm_prompt_sent": "Situation: The learner raised a hand and asked for a hint.\nCurrent concept: variables\nCurrent question: What does a variable store?\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Acknowledge the hint request.\n- Do not reveal the answer.",
+      "llm_raw_response": "\"A variable stores and holds a value in your Python program for later use.\"",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": "hint_request_answer_leak",
+          "raw_response": "\"A variable stores and holds a value in your Python program for later use.\""
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "deterministic_fallback"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:30",
+      "run_index": 1,
+      "event_index": 25,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "what is a variable",
+      "expected_help_request_type": "concept_explanation",
+      "help_request_type": "concept_explanation",
+      "classification_correct": true,
+      "response_policy": "concept_explanation",
+      "response_text": "A variable in Python is like a labeled box that holds a value for you.",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": true,
+      "llm_latency_sec": 0.306,
+      "llm_prompt_sent": "Situation: The learner raised a hand and asked for a concept explanation.\nConcept: variables\nSpoken request: what is a variable\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Offer to briefly explain the concept.\n- Do not answer the current quiz question.",
+      "llm_raw_response": "\"A variable in Python is like a labeled box that holds a value for you.\"",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": null,
+          "raw_response": "\"A variable in Python is like a labeled box that holds a value for you.\""
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "llm"
+    },
+    {
+      "condition": "C1",
+      "condition_name": "Behavior-Only Contextual Prompting",
+      "timestamp": "2026-05-27T08:18:30",
+      "run_index": 1,
+      "event_index": 26,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "",
+      "expected_help_request_type": "clarify_help_request",
+      "help_request_type": "clarify_help_request",
+      "classification_correct": true,
+      "response_policy": "clarify_help_request",
+      "response_text": "Can you please clarify what kind of help you need with this concept?",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": true,
+      "llm_latency_sec": 0.269,
+      "llm_prompt_sent": "Situation: The learner raised a hand, but the help request was unclear.\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Ask what kind of help they want.\n- Offer repeat, hint, or explanation.",
+      "llm_raw_response": "Can you please clarify what kind of help you need with this concept?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": null,
+          "raw_response": "Can you please clarify what kind of help you need with this concept?"
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "llm"
+    }
+  ],
+  "summary": {
+    "target_events_count": 9,
+    "setup_events_count": 9,
+    "behavior_events_count": 3,
+    "hand_raise_total": 5,
+    "total_events_logged": 26,
+    "final_learner_state": {
+      "correct_streak": 0,
+      "wrong_streak": 1,
+      "rolling_accuracy": 0.389,
+      "confidence_level": "low",
+      "weak_concept": "data_types",
+      "concept_attempts": {
+        "variables": 4,
+        "data_types": 5,
+        "loops": 4,
+        "conditionals": 5
+      },
+      "concept_correct": {
+        "variables": 2,
+        "data_types": 1,
+        "loops": 1,
+        "conditionals": 3
+      },
+      "concept_wrong": {
+        "variables": 2,
+        "data_types": 4,
+        "loops": 3,
+        "conditionals": 2
+      },
+      "repeated_hesitation_count": 6,
+      "no_answer_count": 3,
+      "total_questions_answered": 18
+    },
+    "llm_used_count": 24,
+    "deterministic_fallback_count": 2,
+    "avg_llm_latency_sec": 0.651,
+    "scenario_names_covered": [
+      "challenge",
+      "confidence_boost",
+      "elaborate_concept",
+      "give_example",
+      "metacognitive_prompt",
+      "praise",
+      "reassure",
+      "scaffold_hint_no_answer",
+      "setup_data_types_no_answer_1",
+      "setup_data_types_no_answer_2",
+      "setup_loop_recovery_before_elaboration",
+      "setup_reassure_low_confidence",
+      "setup_reassure_low_confidence_2",
+      "setup_reassure_low_confidence_3",
+      "setup_reset_before_elaboration",
+      "setup_reset_conditionals_accuracy",
+      "setup_reset_variables_accuracy",
+      "slow_down"
+    ]
+  }
+}

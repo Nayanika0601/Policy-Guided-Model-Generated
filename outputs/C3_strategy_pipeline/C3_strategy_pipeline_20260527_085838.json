@@ -1,0 +1,1961 @@
+{
+  "timestamp": "2026-05-27T08:58:38",
+  "condition": "C3",
+  "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+  "runs": 1,
+  "target_strategy_events": [
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:31",
+      "run_index": 1,
+      "event_index": 1,
+      "scenario_name": "praise",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "correct_answer": "value",
+      "accepted_answers": [
+        "value"
+      ],
+      "student_answer": "value",
+      "is_correct": true,
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 3.918,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 3.206,
+      "whisper_transcribe_sec": 0.713,
+      "tts_question_latency_sec": 2.825,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 6.743,
+      "expected_strategy": "praise",
+      "selected_strategy": "praise",
+      "strategy_correct": true,
+      "strategy_reason": "correct answer",
+      "strategy_description": "Briefly praise a correct answer.",
+      "learner_state": {
+        "correct_streak": 1,
+        "wrong_streak": 0,
+        "rolling_accuracy": 1.0,
+        "confidence_level": "high",
+        "weak_concept": null,
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "repeated_hesitation_count": 0,
+        "no_answer_count": 0,
+        "total_questions_answered": 1
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 3.918,
+        "last_transcript": "value",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Briefly praise the correct answer. Do not ask another question.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not say close, almost, try again, or ask the question again.\n- Do not mention the concept.\n- Do not repeat the question.\n- Do not explain the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You've got that one right, and I'm impressed with your understanding of this programming concept so far!",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.442,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Briefly praise the correct answer. Do not ask another question.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not say close, almost, try again, or ask the question again.\n- Do not mention the concept.\n- Do not repeat the question.\n- Do not explain the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You've got that one right, and I'm impressed with your understanding of this programming concept so far!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You've got that one right, and I'm impressed with your understanding of this programming concept so far!"
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:32",
+      "run_index": 1,
+      "event_index": 2,
+      "scenario_name": "confidence_boost",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "data_types",
+      "question_text": "What type stores decimal numbers?",
+      "correct_answer": "float",
+      "accepted_answers": [
+        "float"
+      ],
+      "student_answer": "float",
+      "is_correct": true,
+      "answer_status": "correct",
+      "response_behavior": "slow_correct",
+      "response_time_sec": 10.116,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 8.901,
+      "whisper_transcribe_sec": 1.216,
+      "tts_question_latency_sec": 4.03,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 14.146,
+      "expected_strategy": "confidence_boost",
+      "selected_strategy": "confidence_boost",
+      "strategy_correct": true,
+      "strategy_reason": "correct answer after hesitation",
+      "strategy_description": "Encourage the learner after a correct answer that required hesitation.",
+      "learner_state": {
+        "correct_streak": 2,
+        "wrong_streak": 0,
+        "rolling_accuracy": 1.0,
+        "confidence_level": "high",
+        "weak_concept": null,
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 2
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 10.116,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 10.116,
+        "last_transcript": "float",
+        "last_response_behavior": "slow_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.55,
+        "head_yaw_deg": 4.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 9.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Say the answer was correct and encourage the learner for thinking carefully. Do not ask another question.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not say close, almost, try again, or ask the question again.\n- Do not mention the concept.\n- Do not repeat the question.\n- Do not explain the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You were absolutely right, and I'm impressed by how carefully you considered that one!",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.427,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Say the answer was correct and encourage the learner for thinking carefully. Do not ask another question.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not say close, almost, try again, or ask the question again.\n- Do not mention the concept.\n- Do not repeat the question.\n- Do not explain the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You were absolutely right, and I'm impressed by how carefully you considered that one!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You were absolutely right, and I'm impressed by how carefully you considered that one!"
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:32",
+      "run_index": 1,
+      "event_index": 3,
+      "scenario_name": "challenge",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "conditionals",
+      "question_text": "What keyword starts a condition?",
+      "correct_answer": "if",
+      "accepted_answers": [
+        "if"
+      ],
+      "student_answer": "if",
+      "is_correct": true,
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "response_time_sec": 4.677,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 3.933,
+      "whisper_transcribe_sec": 0.743,
+      "tts_question_latency_sec": 3.266,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 7.942,
+      "expected_strategy": "challenge",
+      "selected_strategy": "challenge",
+      "strategy_correct": true,
+      "strategy_reason": "learner is performing strongly",
+      "strategy_description": "Encourage the learner to keep thinking carefully after strong performance.",
+      "learner_state": {
+        "correct_streak": 3,
+        "wrong_streak": 0,
+        "rolling_accuracy": 1.0,
+        "confidence_level": "high",
+        "weak_concept": null,
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 0
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 3
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.677,
+        "last_transcript": "if",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Encourage the learner to keep thinking carefully after strong performance.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention the concept.\n- Do not repeat the question.\n- Do not explain the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're on a roll, so keep thinking carefully and trust your instincts for each question.",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.332,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Encourage the learner to keep thinking carefully after strong performance.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention the concept.\n- Do not repeat the question.\n- Do not explain the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're on a roll, so keep thinking carefully and trust your instincts for each question.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're on a roll, so keep thinking carefully and trust your instincts for each question."
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:32",
+      "run_index": 1,
+      "event_index": 4,
+      "scenario_name": "slow_down",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "conditionals",
+      "question_text": "What operator needs both conditions true?",
+      "correct_answer": "and",
+      "accepted_answers": [
+        "and"
+      ],
+      "student_answer": "equals",
+      "is_correct": false,
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 2.089,
+      "hesitation_high": false,
+      "rapid_guess": true,
+      "mic_listen_sec": 1.28,
+      "whisper_transcribe_sec": 0.809,
+      "tts_question_latency_sec": 3.516,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 5.605,
+      "expected_strategy": "slow_down",
+      "selected_strategy": "slow_down",
+      "strategy_correct": true,
+      "strategy_reason": "quick incorrect answer",
+      "strategy_description": "Encourage careful reasoning after a quick incorrect answer.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.75,
+        "confidence_level": "high",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 0,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 4
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": true,
+        "clarification_requested": false,
+        "last_answer_time_sec": 2.089,
+        "last_transcript": "equals",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Encourage careful reasoning before answering.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not repeat the question.\n- Do not mention the concept.\n- Do not give a hint.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "Take your time to think about what you know and what makes sense in this situation before answering.",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.335,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Encourage careful reasoning before answering.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not repeat the question.\n- Do not mention the concept.\n- Do not give a hint.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "Take your time to think about what you know and what makes sense in this situation before answering.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "Take your time to think about what you know and what makes sense in this situation before answering."
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:32",
+      "run_index": 1,
+      "event_index": 5,
+      "scenario_name": "metacognitive_prompt",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "variables",
+      "question_text": "What symbol assigns a value?",
+      "correct_answer": "equals",
+      "accepted_answers": [
+        "equals"
+      ],
+      "student_answer": "value",
+      "is_correct": false,
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 2.08,
+      "hesitation_high": false,
+      "rapid_guess": true,
+      "mic_listen_sec": 1.28,
+      "whisper_transcribe_sec": 0.799,
+      "tts_question_latency_sec": 3.95,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 6.029,
+      "expected_strategy": "metacognitive_prompt",
+      "selected_strategy": "metacognitive_prompt",
+      "strategy_correct": true,
+      "strategy_reason": "learner has two consecutive incorrect answers",
+      "strategy_description": "Ask the learner to explain how they are thinking about the question.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 2,
+        "rolling_accuracy": 0.6,
+        "confidence_level": "medium",
+        "weak_concept": "variables",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 5
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": true,
+        "clarification_requested": false,
+        "last_answer_time_sec": 2.08,
+        "last_transcript": "value",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Ask the learner to briefly explain how they are thinking.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Ask about thinking process, not the answer.\n- Do not mention the concept.\n- Do not repeat the question.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "Can you briefly tell me how you're thinking about approaching this programming concept right now?",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.318,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Ask the learner to briefly explain how they are thinking.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Ask about thinking process, not the answer.\n- Do not mention the concept.\n- Do not repeat the question.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "Can you briefly tell me how you're thinking about approaching this programming concept right now?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "Can you briefly tell me how you're thinking about approaching this programming concept right now?"
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:33",
+      "run_index": 1,
+      "event_index": 9,
+      "scenario_name": "reassure",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "variables",
+      "question_text": "What word means give a variable a value?",
+      "correct_answer": "assign",
+      "accepted_answers": [
+        "assign"
+      ],
+      "student_answer": "value",
+      "is_correct": false,
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "response_time_sec": 4.872,
+      "hesitation_high": false,
+      "rapid_guess": false,
+      "mic_listen_sec": 4.003,
+      "whisper_transcribe_sec": 0.868,
+      "tts_question_latency_sec": 2.278,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 7.15,
+      "expected_strategy": "reassure",
+      "selected_strategy": "reassure",
+      "strategy_correct": true,
+      "strategy_reason": "learner has repeated incorrect answers",
+      "strategy_description": "Reduce frustration after repeated incorrect spoken answers.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 6,
+        "rolling_accuracy": 0.333,
+        "confidence_level": "low",
+        "weak_concept": "variables",
+        "concept_attempts": {
+          "variables": 3,
+          "data_types": 2,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 9
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.872,
+        "last_transcript": "value",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.0,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Offer brief emotional encouragement only. Do not give a hint, explanation, example, keyword, or answer.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention the concept.\n- Do not mention the question.\n- Do not give a hint.\n- Do not reveal or imply the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're doing great so far, keep going and you'll get through this quiz with confidence!",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.332,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Offer brief emotional encouragement only. Do not give a hint, explanation, example, keyword, or answer.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention the concept.\n- Do not mention the question.\n- Do not give a hint.\n- Do not reveal or imply the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're doing great so far, keep going and you'll get through this quiz with confidence!",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're doing great so far, keep going and you'll get through this quiz with confidence!"
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:34",
+      "run_index": 1,
+      "event_index": 10,
+      "scenario_name": "scaffold_hint_no_answer",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "loops",
+      "question_text": "What keyword exits a loop immediately?",
+      "correct_answer": "break",
+      "accepted_answers": [
+        "break",
+        "brake"
+      ],
+      "student_answer": "",
+      "is_correct": false,
+      "answer_status": "no_answer",
+      "response_behavior": "no_answer",
+      "response_time_sec": 15.048,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 15.224,
+      "whisper_transcribe_sec": 0.0,
+      "tts_question_latency_sec": 3.811,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 18.86,
+      "expected_strategy": "scaffold_hint",
+      "selected_strategy": "scaffold_hint",
+      "strategy_correct": true,
+      "strategy_reason": "learner did not answer",
+      "strategy_description": "Give a small hint without revealing the answer.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 6,
+        "rolling_accuracy": 0.3,
+        "confidence_level": "low",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 3,
+          "data_types": 2,
+          "loops": 2,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 2,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 2,
+        "no_answer_count": 1,
+        "total_questions_answered": 10
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 15.048,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 15.048,
+        "last_transcript": "",
+        "last_response_behavior": "no_answer",
+        "no_answer": true
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.65,
+        "head_yaw_deg": 2.0,
+        "head_pitch_deg": 1.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 15.0,
+        "still_there_prompt": true,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: No answer was heard for the current question.\n\nTeaching move: Give one small hint without revealing the answer.\n\nConcept: loops\n\nQuestion: What keyword exits a loop immediately?\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not use the correct answer or any spelling variant of the correct answer.\n- Do not repeat the question.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You might be thinking of a keyword that forces a loop to terminate its current iteration.",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 1.655,
+      "llm_prompt_sent": "Situation: No answer was heard for the current question.\n\nTeaching move: Give one small hint without revealing the answer.\n\nConcept: loops\n\nQuestion: What keyword exits a loop immediately?\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not use the correct answer or any spelling variant of the correct answer.\n- Do not repeat the question.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You might be thinking of a keyword that forces a loop to terminate its current iteration.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": "scaffold_answer_leak",
+          "raw_response": "You're looking for a keyword that can \"break free\" from the loop at any time, isn't that right?"
+        },
+        {
+          "attempt": 2,
+          "temperature": 0.9,
+          "rejection_reason": "scaffold_answer_leak",
+          "raw_response": "You're thinking about what action breaks out of a loop quickly and efficiently somehow."
+        },
+        {
+          "attempt": 3,
+          "temperature": 1.0,
+          "rejection_reason": "scaffold_answer_leak",
+          "raw_response": "You're thinking about how to break out of a loop quickly in certain situations?"
+        },
+        {
+          "attempt": 4,
+          "temperature": 1.1,
+          "rejection_reason": "scaffold_answer_leak",
+          "raw_response": "You might be looking for a keyword that can \"break\" free from the loop when certain conditions are met instantly."
+        },
+        {
+          "attempt": 5,
+          "temperature": 1.2,
+          "rejection_reason": null,
+          "raw_response": "You might be thinking of a keyword that forces a loop to terminate its current iteration."
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:35",
+      "run_index": 1,
+      "event_index": 13,
+      "scenario_name": "give_example",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "loops",
+      "question_text": "What keyword starts a counting loop?",
+      "correct_answer": "for",
+      "accepted_answers": [
+        "for",
+        "four",
+        "fore"
+      ],
+      "student_answer": "function",
+      "is_correct": false,
+      "answer_status": "incorrect",
+      "response_behavior": "slow_wrong",
+      "response_time_sec": 13.147,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 12.014,
+      "whisper_transcribe_sec": 1.133,
+      "tts_question_latency_sec": 4.585,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 17.732,
+      "expected_strategy": "give_example",
+      "selected_strategy": "give_example",
+      "strategy_correct": true,
+      "strategy_reason": "learner shows difficulty with the current concept",
+      "strategy_description": "Give one simple example related to the current concept without revealing the answer.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.385,
+        "confidence_level": "low",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 3,
+          "conditionals": 4
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 3,
+        "no_answer_count": 1,
+        "total_questions_answered": 13
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 13.147,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 13.147,
+        "last_transcript": "function",
+        "last_response_behavior": "slow_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.55,
+        "head_yaw_deg": 4.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 9.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Give one simple everyday example related to the concept without using the quiz answer or code syntax.\n\nConcept: loops\n\nQuestion: What keyword starts a counting loop?\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Use the question only to understand the topic.\n- Do not repeat the question.\n- Do not include the answer.\n- Do not use code.\n- Give a simple everyday example.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You repeat a task multiple times when folding laundry to put away a stack of clean clothes.",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.401,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Give one simple everyday example related to the concept without using the quiz answer or code syntax.\n\nConcept: loops\n\nQuestion: What keyword starts a counting loop?\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Use the question only to understand the topic.\n- Do not repeat the question.\n- Do not include the answer.\n- Do not use code.\n- Give a simple everyday example.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You repeat a task multiple times when folding laundry to put away a stack of clean clothes.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You repeat a task multiple times when folding laundry to put away a stack of clean clothes."
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:35",
+      "run_index": 1,
+      "event_index": 18,
+      "scenario_name": "elaborate_concept",
+      "event_type": "quiz_answer",
+      "setup_only": false,
+      "concept": "data_types",
+      "question_text": "What type stores key value pairs?",
+      "correct_answer": "dictionary",
+      "accepted_answers": [
+        "dictionary",
+        "dict"
+      ],
+      "student_answer": "list",
+      "is_correct": false,
+      "answer_status": "incorrect",
+      "response_behavior": "slow_wrong",
+      "response_time_sec": 10.048,
+      "hesitation_high": true,
+      "rapid_guess": false,
+      "mic_listen_sec": 9.161,
+      "whisper_transcribe_sec": 0.887,
+      "tts_question_latency_sec": 4.81,
+      "tts_feedback_latency_sec": 0.0,
+      "total_cycle_sec": 14.857,
+      "expected_strategy": "elaborate_concept",
+      "selected_strategy": "elaborate_concept",
+      "strategy_correct": true,
+      "strategy_reason": "learner shows persistent difficulty with the current concept",
+      "strategy_description": "Briefly explain the current concept in beginner-friendly language without revealing the answer.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 10.048,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 10.048,
+        "last_transcript": "list",
+        "last_response_behavior": "slow_wrong",
+        "no_answer": false
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.55,
+        "head_yaw_deg": 4.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 9.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Briefly explain the current concept in beginner-friendly language without answering the quiz question.\n\nConcept: data_types\n\nQuestion: What type stores key value pairs?\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Use the question only to understand the learner difficulty.\n- Do not repeat the question.\n- Do not include the answer.\n- Explain the concept generally, not the specific answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You're looking at data types that can hold multiple values and their corresponding descriptions or labels.",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.337,
+      "llm_prompt_sent": "Situation: You are working through a beginner programming concepts quiz.\n\nTeaching move: Briefly explain the current concept in beginner-friendly language without answering the quiz question.\n\nConcept: data_types\n\nQuestion: What type stores key value pairs?\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Use the question only to understand the learner difficulty.\n- Do not repeat the question.\n- Do not include the answer.\n- Explain the concept generally, not the specific answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You're looking at data types that can hold multiple values and their corresponding descriptions or labels.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You're looking at data types that can hold multiple values and their corresponding descriptions or labels."
+        }
+      ]
+    }
+  ],
+  "setup_events": [
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:32",
+      "run_index": 1,
+      "event_index": 6,
+      "scenario_name": "setup_reassure_low_confidence",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "conditionals",
+      "question_text": "What word gives another choice?",
+      "student_answer": "if",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 3,
+        "rolling_accuracy": 0.5,
+        "confidence_level": "medium",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 6
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 3.635,
+        "last_transcript": "if",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:32",
+      "run_index": 1,
+      "event_index": 7,
+      "scenario_name": "setup_reassure_low_confidence_2",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "loops",
+      "question_text": "What word repeats while a rule is true?",
+      "student_answer": "for",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 4,
+        "rolling_accuracy": 0.429,
+        "confidence_level": "medium",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 0,
+          "loops": 1,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 7
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.428,
+        "last_transcript": "for",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:32",
+      "run_index": 1,
+      "event_index": 8,
+      "scenario_name": "setup_reassure_low_confidence_3",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "data_types",
+      "question_text": "What type stores true or false?",
+      "student_answer": "string",
+      "answer_status": "incorrect",
+      "response_behavior": "fast_wrong",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 5,
+        "rolling_accuracy": 0.375,
+        "confidence_level": "low",
+        "weak_concept": "conditionals",
+        "concept_attempts": {
+          "variables": 2,
+          "data_types": 2,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 1,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 1,
+        "no_answer_count": 0,
+        "total_questions_answered": 8
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.094,
+        "last_transcript": "string",
+        "last_response_behavior": "fast_wrong",
+        "no_answer": false
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:34",
+      "run_index": 1,
+      "event_index": 11,
+      "scenario_name": "setup_reset_variables_accuracy",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "variables",
+      "question_text": "What can store text or numbers?",
+      "student_answer": "variable",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "learner_state": {
+        "correct_streak": 1,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.364,
+        "confidence_level": "low",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 2,
+          "conditionals": 3
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 1
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 2,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 2,
+        "no_answer_count": 1,
+        "total_questions_answered": 11
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.421,
+        "last_transcript": "variable",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:34",
+      "run_index": 1,
+      "event_index": 12,
+      "scenario_name": "setup_reset_conditionals_accuracy",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "conditionals",
+      "question_text": "What word starts a condition?",
+      "student_answer": "if",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "learner_state": {
+        "correct_streak": 2,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.417,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 2,
+          "conditionals": 4
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 2
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 2,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 2,
+        "no_answer_count": 1,
+        "total_questions_answered": 12
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 4.919,
+        "last_transcript": "if",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:35",
+      "run_index": 1,
+      "event_index": 14,
+      "scenario_name": "setup_reset_before_elaboration",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "conditionals",
+      "question_text": "What word gives another branch?",
+      "student_answer": "else",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "learner_state": {
+        "correct_streak": 1,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.429,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 3,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 0,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 3,
+        "no_answer_count": 1,
+        "total_questions_answered": 14
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 3.732,
+        "last_transcript": "else",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:35",
+      "run_index": 1,
+      "event_index": 15,
+      "scenario_name": "setup_loop_recovery_before_elaboration",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "loops",
+      "question_text": "What keyword repeats over a range?",
+      "student_answer": "for",
+      "answer_status": "correct",
+      "response_behavior": "fast_correct",
+      "learner_state": {
+        "correct_streak": 2,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.467,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 2,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 3,
+        "no_answer_count": 1,
+        "total_questions_answered": 15
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 0.0,
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 2.684,
+        "last_transcript": "for",
+        "last_response_behavior": "fast_correct",
+        "no_answer": false
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:35",
+      "run_index": 1,
+      "event_index": 16,
+      "scenario_name": "setup_data_types_no_answer_1",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "data_types",
+      "question_text": "What type stores text?",
+      "student_answer": "",
+      "answer_status": "no_answer",
+      "response_behavior": "no_answer",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.438,
+        "confidence_level": "medium",
+        "weak_concept": "loops",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 3,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 2,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 4,
+        "no_answer_count": 2,
+        "total_questions_answered": 16
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 15.116,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 15.116,
+        "last_transcript": "",
+        "last_response_behavior": "no_answer",
+        "no_answer": true
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:35",
+      "run_index": 1,
+      "event_index": 17,
+      "scenario_name": "setup_data_types_no_answer_2",
+      "event_type": "quiz_answer",
+      "setup_only": true,
+      "concept": "data_types",
+      "question_text": "What type stores whole numbers?",
+      "student_answer": "",
+      "answer_status": "no_answer",
+      "response_behavior": "no_answer",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 0,
+        "rolling_accuracy": 0.412,
+        "confidence_level": "medium",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 4,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 3,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 5,
+        "no_answer_count": 3,
+        "total_questions_answered": 17
+      },
+      "interaction_state": {
+        "hesitation_time_sec": 15.318,
+        "hesitation_high": true,
+        "rapid_guess": false,
+        "clarification_requested": false,
+        "last_answer_time_sec": 15.318,
+        "last_transcript": "",
+        "last_response_behavior": "no_answer",
+        "no_answer": true
+      }
+    }
+  ],
+  "behavior_events": [
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:36",
+      "run_index": 1,
+      "event_index": 19,
+      "scenario_name": "head_turned_re_engage",
+      "event_type": "behavior_event",
+      "trigger": "head_turned",
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "expected_strategy": "re_engage",
+      "selected_strategy": "re_engage",
+      "strategy_correct": true,
+      "strategy_reason": "attention appears to have drifted",
+      "strategy_description": "Gently bring the learner back when attention appears to drift.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "no_answer": false,
+        "last_response_behavior": null
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.15,
+        "head_yaw_deg": 42.0,
+        "head_pitch_deg": 3.0,
+        "head_moving": true,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 1.5,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: Attention appears to have briefly drifted.\n\nTeaching move: Gently invite the learner back to the current quiz.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention code snippets.\n- Do not ask a new quiz question.\n- Do not mention the concept.\n- Do not mention the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You were in the middle of answering our last quiz question, would you like to continue with it?",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.344,
+      "llm_prompt_sent": "Situation: Attention appears to have briefly drifted.\n\nTeaching move: Gently invite the learner back to the current quiz.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention code snippets.\n- Do not ask a new quiz question.\n- Do not mention the concept.\n- Do not mention the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You were in the middle of answering our last quiz question, would you like to continue with it?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You were in the middle of answering our last quiz question, would you like to continue with it?"
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:36",
+      "run_index": 1,
+      "event_index": 20,
+      "scenario_name": "face_absent_re_engage",
+      "event_type": "behavior_event",
+      "trigger": "face_absent",
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "expected_strategy": "re_engage",
+      "selected_strategy": "re_engage",
+      "strategy_correct": true,
+      "strategy_reason": "attention appears to have drifted",
+      "strategy_description": "Gently bring the learner back when attention appears to drift.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "no_answer": false,
+        "last_response_behavior": null
+      },
+      "obs": {
+        "face_detected": false,
+        "body_detected": false,
+        "gaze_on_robot": 0.0,
+        "head_yaw_deg": 0.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 6.0,
+        "still_there_prompt": false,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: The learner appears to have moved out of view.\n\nTeaching move: Gently invite the learner back to the current quiz.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention code snippets.\n- Do not ask a new quiz question.\n- Do not mention the concept.\n- Do not mention the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "Please come back and let's continue with your quiz on programming concepts.",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.34,
+      "llm_prompt_sent": "Situation: The learner appears to have moved out of view.\n\nTeaching move: Gently invite the learner back to the current quiz.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not mention code snippets.\n- Do not ask a new quiz question.\n- Do not mention the concept.\n- Do not mention the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "Please come back and let's continue with your quiz on programming concepts.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "Please come back and let's continue with your quiz on programming concepts."
+        }
+      ]
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:36",
+      "run_index": 1,
+      "event_index": 21,
+      "scenario_name": "no_movement_stillness_check",
+      "event_type": "behavior_event",
+      "trigger": "no_movement",
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "expected_strategy": "stillness_check",
+      "selected_strategy": "stillness_check",
+      "strategy_correct": true,
+      "strategy_reason": "learner appears inactive",
+      "strategy_description": "Check in when the learner appears inactive or stuck.",
+      "learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      },
+      "interaction_state": {
+        "hesitation_high": false,
+        "rapid_guess": false,
+        "no_answer": false,
+        "last_response_behavior": null
+      },
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.7,
+        "head_yaw_deg": 2.0,
+        "head_pitch_deg": 1.0,
+        "head_moving": false,
+        "hand_raised": false,
+        "hand_raise_side": "none",
+        "no_movement_sec": 18.0,
+        "still_there_prompt": true,
+        "speech_energy": "low"
+      },
+      "system_prompt": "You are a warm robot tutor for a beginner programming concepts quiz. Write one short spoken response using the given situation and teaching move. Do not choose the strategy or invent new content.",
+      "user_prompt": "Situation: You have been still for a while.\n\nTeaching move: Briefly check whether the learner is ready to continue.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not ask a new quiz question.\n- Do not mention the concept.\n- Do not mention the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "response_text": "You look like you're ready to move on; is there something else you'd like to discuss?",
+      "llm_used": true,
+      "response_source": "llm",
+      "llm_latency_sec": 0.34,
+      "llm_prompt_sent": "Situation: You have been still for a while.\n\nTeaching move: Briefly check whether the learner is ready to continue.\n\nRules:\n- Output exactly one sentence.\n- Do not add a second sentence.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Speak directly using \"you\".\n- Do not reveal the answer.\n- Do not ask a new quiz question.\n- Do not mention the concept.\n- Do not mention the answer.\n- This is a term question, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.",
+      "llm_raw_response": "You look like you're ready to move on; is there something else you'd like to discuss?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "temperature": 0.7,
+          "rejection_reason": null,
+          "raw_response": "You look like you're ready to move on; is there something else you'd like to discuss?"
+        }
+      ]
+    }
+  ],
+  "hand_raise_events": [
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:37",
+      "run_index": 1,
+      "event_index": 22,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "I have a question",
+      "expected_help_request_type": "ask_question",
+      "help_request_type": "ask_question",
+      "classification_correct": true,
+      "response_policy": "ask_question",
+      "response_text": "You have a question, please go ahead and share it with me now.",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": true,
+      "llm_latency_sec": 0.321,
+      "llm_prompt_sent": "Situation: The learner raised a hand and wants to ask a question.\nSpoken request: I have a question\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Use one short spoken sentence.\n- Speak directly using \"you\".\n- This is a beginner programming concepts quiz, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.\n- Do not reveal the answer unless the learner explicitly asks for a concept explanation.\n- Invite the learner to ask their question.\n- Do not answer a question yet.",
+      "llm_raw_response": "You have a question, please go ahead and share it with me now.",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": null,
+          "raw_response": "You have a question, please go ahead and share it with me now."
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "llm"
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:37",
+      "run_index": 1,
+      "event_index": 23,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "can you repeat the question",
+      "expected_help_request_type": "repeat_question",
+      "help_request_type": "repeat_question",
+      "classification_correct": true,
+      "response_policy": "repeat_question",
+      "response_text": "Sure, the question is: What does a variable store?",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": false,
+      "llm_latency_sec": 0.0,
+      "llm_prompt_sent": "",
+      "llm_raw_response": "",
+      "llm_retry_log": [],
+      "llm_backend": "gpu_ssh",
+      "response_source": "deterministic_fallback"
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:37",
+      "run_index": 1,
+      "event_index": 24,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "can I get a hint",
+      "expected_help_request_type": "hint_request",
+      "help_request_type": "hint_request",
+      "classification_correct": true,
+      "response_policy": "scaffold_hint",
+      "response_text": "Think about what the question is asking the term to store or represent.",
+      "routes_to_strategy": "scaffold_hint",
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": false,
+      "llm_latency_sec": 0.305,
+      "llm_prompt_sent": "Situation: The learner raised a hand and asked for a hint.\nCurrent concept: variables\nCurrent question: What does a variable store?\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Use one short spoken sentence.\n- Speak directly using \"you\".\n- This is a beginner programming concepts quiz, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.\n- Do not reveal the answer unless the learner explicitly asks for a concept explanation.\n- Give a small term hint.\n- Do not reveal the answer.",
+      "llm_raw_response": "\"A variable holds and stores information that can be used later in your program.\"",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": "hint_request_answer_leak",
+          "raw_response": "\"A variable holds and stores information that can be used later in your program.\""
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "deterministic_fallback"
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:37",
+      "run_index": 1,
+      "event_index": 25,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "what is a variable",
+      "expected_help_request_type": "concept_explanation",
+      "help_request_type": "concept_explanation",
+      "classification_correct": true,
+      "response_policy": "concept_explanation",
+      "response_text": "You can think of a variable as a labeled box where you store and keep track of a value, okay?",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": true,
+      "llm_latency_sec": 0.368,
+      "llm_prompt_sent": "Situation: The learner raised a hand and asked for a concept explanation.\nConcept: variables\nSpoken request: what is a variable\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Use one short spoken sentence.\n- Speak directly using \"you\".\n- This is a beginner programming concepts quiz, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.\n- Do not reveal the answer unless the learner explicitly asks for a concept explanation.\n- Offer to briefly explain the concept.\n- Do not answer the current quiz question.",
+      "llm_raw_response": "You can think of a variable as a labeled box where you store and keep track of a value, okay?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": null,
+          "raw_response": "You can think of a variable as a labeled box where you store and keep track of a value, okay?"
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "llm"
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Strategy-Selected State-Conditioned Pipeline",
+      "timestamp": "2026-05-27T08:58:38",
+      "run_index": 1,
+      "event_index": 26,
+      "event_type": "hand_raise_help_action",
+      "trigger": "hand_raised",
+      "obs": {
+        "face_detected": true,
+        "body_detected": true,
+        "gaze_on_robot": 0.8,
+        "head_yaw_deg": 5.0,
+        "head_pitch_deg": 0.0,
+        "head_moving": true,
+        "hand_raised": true,
+        "hand_raise_side": "right",
+        "no_movement_sec": 0.5,
+        "still_there_prompt": false,
+        "speech_energy": "medium"
+      },
+      "spoken_request": "",
+      "expected_help_request_type": "clarify_help_request",
+      "help_request_type": "clarify_help_request",
+      "classification_correct": true,
+      "response_policy": "clarify_help_request",
+      "response_text": "You'd like some help with something specific on this quiz - can I clarify what's tripping you up?",
+      "routes_to_strategy": null,
+      "concept": "variables",
+      "question_text": "What does a variable store?",
+      "llm_used": true,
+      "llm_latency_sec": 0.404,
+      "llm_prompt_sent": "Situation: The learner raised a hand, but the help request was unclear.\nRules:\n- Output exactly one sentence.\n- Do not add extra explanation.\n- After the sentence, stop immediately.\n- 8 to 18 words.\n- Use one short spoken sentence.\n- Speak directly using \"you\".\n- This is a beginner programming concepts quiz, not a code-writing task.\n- Do not mention code, syntax, print, console, function, indentation, output, expression, error messages, or code snippets.\n- Do not assume the learner is writing code.\n- Do not reveal the answer unless the learner explicitly asks for a concept explanation.\n- Ask what kind of help they want.\n- Offer repeat, hint, or explanation.",
+      "llm_raw_response": "You'd like some help with something specific on this quiz - can I clarify what's tripping you up?",
+      "llm_retry_log": [
+        {
+          "attempt": 1,
+          "rejection_reason": null,
+          "raw_response": "You'd like some help with something specific on this quiz - can I clarify what's tripping you up?"
+        }
+      ],
+      "llm_backend": "gpu_ssh",
+      "response_source": "llm"
+    }
+  ],
+  "summary": {
+    "strategy_summary": {
+      "target_strategy_events": 9,
+      "strategy_correct_count": 9,
+      "strategy_accuracy_pct": 100.0,
+      "strategies_covered": [
+        "challenge",
+        "confidence_boost",
+        "elaborate_concept",
+        "give_example",
+        "metacognitive_prompt",
+        "praise",
+        "re_engage",
+        "reassure",
+        "scaffold_hint",
+        "slow_down",
+        "stillness_check"
+      ],
+      "failed_strategy_scenarios": []
+    },
+    "behavior_summary": {
+      "behavior_events_count": 3,
+      "behavior_triggers_covered": [
+        "face_absent",
+        "head_turned",
+        "no_movement"
+      ],
+      "behavior_strategy_correct_count": 3,
+      "behavior_strategy_accuracy_pct": 100.0
+    },
+    "hand_raise_summary": {
+      "hand_raise_total": 5,
+      "hand_raise_correct_count": 5,
+      "hand_raise_accuracy_pct": 100.0,
+      "help_request_types_covered": [
+        "ask_question",
+        "clarify_help_request",
+        "concept_explanation",
+        "hint_request",
+        "repeat_question"
+      ],
+      "separate_help_actions": [
+        "ask_question",
+        "repeat_question",
+        "concept_explanation",
+        "clarify_help_request"
+      ],
+      "hand_raise_llm_used_count": 3,
+      "hand_raise_deterministic_count": 2
+    },
+    "state_summary": {
+      "final_learner_state": {
+        "correct_streak": 0,
+        "wrong_streak": 1,
+        "rolling_accuracy": 0.389,
+        "confidence_level": "low",
+        "weak_concept": "data_types",
+        "concept_attempts": {
+          "variables": 4,
+          "data_types": 5,
+          "loops": 4,
+          "conditionals": 5
+        },
+        "concept_correct": {
+          "variables": 2,
+          "data_types": 1,
+          "loops": 1,
+          "conditionals": 3
+        },
+        "concept_wrong": {
+          "variables": 2,
+          "data_types": 4,
+          "loops": 3,
+          "conditionals": 2
+        },
+        "repeated_hesitation_count": 6,
+        "no_answer_count": 3,
+        "total_questions_answered": 18
+      }
+    },
+    "llm_summary": {
+      "llm_used_count": 12,
+      "deterministic_fallback_count": 0,
+      "avg_llm_latency_sec": 0.467
+    },
+    "total_events_logged": 26,
+    "setup_events_count": 9
+  }
+}
