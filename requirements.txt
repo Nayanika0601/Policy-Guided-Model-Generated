@@ -1,0 +1,9 @@
+# Core experiment/LLM client
+requests>=2.31,<3
+
+# Camera and visual-state processing
+opencv-python>=4.8,<5
+mediapipe>=0.10.21,<0.11
+
+# The missing speech_input.py and speech_output.py may require additional
+# audio/STT/TTS packages. Add them after those source files are restored.
